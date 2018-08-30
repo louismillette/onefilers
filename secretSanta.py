@@ -111,7 +111,7 @@ def make_first_n(n):
             nm = number_of_nm_derangements_cached(j,i-j)
             c.execute('INSERT INTO derangements VALUES("{}", "{}", "{}")'.format(j,i-j,nm))
             conn.commit()
-        print("Round {} finished".format(i))
+        print("Round {} finished".format(i)) 
 
 
 # print(number_of_nm_derangements(25,25))
